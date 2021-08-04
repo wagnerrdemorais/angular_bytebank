@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-nova-transferencia',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class NovaTransferenciaComponent {
 
+  valor: number;
+  destino: number;
+
+  transferir(): void {
+    console.log('Nova transferencia');
+    console.log('Valor: ', this.valor);
+    console.log('Destino: ', this.destino);
+  }
 }
